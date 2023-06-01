@@ -1,4 +1,5 @@
 import IsfForm from "@/components/IsfForm";
+import Image from "next/image";
 
 export default function Home() {
   return (
@@ -79,16 +80,61 @@ export default function Home() {
             Quels avantages offre l&apos;ISF vert ?
           </h2>
           <p className={"mt-4 tracking-tight text-slate-700 max-w-3xl mx-auto"}>
-            L&apos;ISF vert ou climatique est un concept émergent proposé par
-            Greenpeace et soutenu par des politiques engagés tels que le maire
-            de Grenoble, Eric Piolle, ainsi que des candidats à la présidence
-            tels qu&apos;Anne Hidalgo, Yannick Jadot et Jean-Luc Mélenchon. Cet
-            impôt vise à combiner la fiscalité écologique et la justice sociale
-            en intégrant l&apos;empreinte carbone des avoirs financiers dans le
-            calcul de l&apos;ISF. Son objectif est de stimuler des
-            investissements durables et responsables en faveur de la transition
-            écologique en France.
+            L&apos;ISF climatique vise à inciter les grandes fortunes à orienter
+            leurs investissements vers des projets verts et durables, tels que
+            la société FEVE qui offre des opportunités d&apos;investissement
+            dans une foncière solidaire favorisant l&apos;installation des
+            agriculteurs et agricultrices de demain. Contribuez à la transition
+            écologique tout en bénéficiant d&apos;avantages fiscaux grâce à
+            votre ISF vert en France.
           </p>
+        </div>
+
+        <div className="mt-24">
+          <p className="font-display text-base text-slate-900">
+            Ils parlent de nous
+          </p>
+          <ul
+            role="list"
+            className="mt-8 flex items-center justify-center gap-x-8 sm:flex-col sm:gap-x-0 sm:gap-y-10 xl:flex-row xl:gap-x-12 xl:gap-y-0"
+          >
+            <li className="flex">
+              <a href="https://lecercledeseconomistes.fr/un-isf-vert">
+                <Image
+                  src={"/cercle-eco.png"}
+                  alt={"ISF vert et impôts sur la fortune : urgence climatique"}
+                  width={200}
+                  height={400}
+                />
+              </a>
+            </li>
+            <li className="flex">
+              <a
+                href="https://www.jpbetbeze.com/medias/un-isf-vert/"
+                target={"_blank"}
+              >
+                <Image
+                  src={"/jpbet.png"}
+                  alt={"Contribuable en France : impôts"}
+                  width={200}
+                  height={400}
+                />
+              </a>
+            </li>
+            <li className="flex">
+              <a
+                href="https://www.actu-environnement.com/ae/news/isf-climatique-impots-fortune-greenpeace-rapport-36292.php4"
+                target={"_blank"}
+              >
+                <Image
+                  src={"/actu.png"}
+                  alt={"ISF vert et investissement : gérer mes revenus"}
+                  width={200}
+                  height={400}
+                />
+              </a>
+            </li>
+          </ul>
         </div>
       </div>
 
@@ -138,104 +184,29 @@ export default function Home() {
       >
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="mx-auto max-w-2xl md:text-center">
-            <h2 className="font-display text-3xl tracking-tight text-slate-900 sm:text-4xl">
-              Investissez dans l&apos;agroécologie pour
-              <br />
+            <h2 className="font-display text-2xl tracking-tight text-slate-900 sm:text-3xl">
+              Votre argent a déjà un{" "}
               <span className="text-green-600 font-medium">
-                réduire votre ISF
+                impact important
               </span>
+              , n&apos;attendez pas que la loi vous y oblige
             </h2>
-            <p className="mt-4 text-lg tracking-tight text-slate-700">
+            <p className="mt-4 md:text-lg tracking-tight text-slate-700">
               En investissant dans des projets agroécologiques, vous pouvez
               réduire votre Impôt de Solidarité sur la Fortune (ISF) et soutenir
               activement l&apos;agriculture durable.
             </p>
           </div>
-          <div className="-mx-4 mt-20 flex flex-col gap-y-10 overflow-hidden px-4 sm:-mx-6 sm:px-6 lg:hidden">
-            <div>
-              <div className="mx-auto max-w-2xl">
-                <div className="relative">
-                  <div className="w-9">
-                    <span className="block m-auto text-3xl">⏰</span>
-                  </div>
-                  <h3 className="mt-3 text-2xl font-medium text-green-600">
-                    <span className=""></span>50 %
-                  </h3>
-                  <p className="mt-2 text-lg text-slate-900 font-display">
-                    des agriculteurs partent à la retraite dans les 10 ans à
-                    venir
-                  </p>
-                  <p className="mt-4 text-sm text-slate-600">
-                    Selon une récente étude, la retraite imminente de nombreux
-                    agriculteurs aura un impact majeur sur le secteur agricole,
-                    nécessitant des mesures adaptées pour maintenir
-                    l&apos;approvisionnement alimentaire.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div>
-              <div className="mx-auto max-w-3xl">
-                <div className="relative">
-                  <div className="w-9">
-                    <span className="block m-auto text-3xl">🧑‍🌾</span>
-                  </div>
-                  <h3 className="mt-3 text-2xl font-medium text-green-600">
-                    200 000
-                  </h3>
-                  <p className="mt-2 text-lg text-slate-900 font-display">
-                    fermes à reprendre avec une reprise hors cadre familiale
-                    complexe
-                  </p>
-                  <p className="mt-4 text-sm text-slate-600">
-                    Environ 200 000 fermes sont disponibles pour être reprises,
-                    mais la complexité de cette transition pose des défis.
-                    Trouver des solutions pour faciliter ces transitions est
-                    essentiel pour maintenir la vitalité du secteur.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div>
-              <div className="mx-auto max-w-2xl">
-                <div className="relative">
-                  <div className="w-9">
-                    <span className="block m-auto text-3xl">🥕</span>
-                  </div>
-                  <h3 className="mt-3 text-2xl font-medium text-green-600">
-                    13,41 %
-                  </h3>
-                  <p className="mt-2 text-lg text-slate-900 font-display">
-                    des exploitations agricoles en France sont certifiées BIO
-                  </p>
-                  <p className="mt-4 text-sm text-slate-600">
-                    Environ 13,41% des exploitations agricoles en France
-                    pratiquent l&apos;agriculture biologique, mais cela reste
-                    insuffisant pour contrer l&apos;effondrement actuel de la
-                    biodiversité causé par l&apos;utilisation de pesticides.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div className="mt-3 flex justify-center">
-              <a
-                className="group inline-flex items-center justify-center rounded-full py-3 px-6 text-md font-semibold focus:outline-none focus-visible:outline-2 focus-visible:outline-offset-2 bg-green-200 text-green-900 hover:bg-green-300 hover:text-black active:bg-green-400 focus-visible:outline-slate-900"
-                href="https://feve.co/investir/souscription"
-              >
-                J&apos;investis dans l&apos;agroécologie 👨‍🌾
-              </a>
-            </div>
-          </div>
-          <div className="hidden lg:mt-20 lg:block">
-            <div className="grid grid-cols-3 gap-x-8">
-              <div className="relative">
+          <div className="lg:mt-20 block">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-x-8">
+              <div className="relative mt-12 md:mt-0">
                 <div className="w-9">
-                  <span className="block m-auto text-4xl">⏰</span>
+                  <span className="block m-auto text-3xl md:text-4xl">⏰</span>
                 </div>
-                <h3 className="mt-3 text-4xl font-medium text-green-600">
+                <h3 className="mt-3 text-2xl md:text-4xl font-medium text-green-600">
                   50 %
                 </h3>
-                <p className="mt-2 text-xl text-slate-900 font-display">
+                <p className="mt-1 md:mt-2 text-lg md:text-xl text-slate-900 font-display">
                   des agriculteurs partent à la retraite dans les 10 ans à venir
                 </p>
                 <p className="mt-4 text-sm text-slate-600">
@@ -245,14 +216,14 @@ export default function Home() {
                   l&apos;approvisionnement alimentaire.
                 </p>
               </div>
-              <div className="relative">
+              <div className="relative mt-12 md:mt-0">
                 <div className="w-9">
-                  <span className="block m-auto text-4xl">🧑‍🌾</span>
+                  <span className="block m-auto text-3xl md:text-4xl">🧑‍🌾</span>
                 </div>
-                <h3 className="mt-3 text-4xl font-medium text-green-600">
+                <h3 className="mt-3 text-2xl md:text-4xl font-medium text-green-600">
                   200 000
                 </h3>
-                <p className="mt-2 text-xl text-slate-900 font-display">
+                <p className="mt-1 md:mt-2 text-lg md:text-xl text-slate-900 font-display">
                   fermes à reprendre avec une reprise hors cadre familiale
                   complexe
                 </p>
@@ -263,14 +234,14 @@ export default function Home() {
                   pour maintenir la vitalité du secteur.
                 </p>
               </div>
-              <div className="relative">
+              <div className="relative mt-12 md:mt-0">
                 <div className="w-9">
-                  <span className="block m-auto text-4xl">🥕</span>
+                  <span className="block m-auto text-3xl md:text-4xl">🥕</span>
                 </div>
-                <h3 className="mt-3 text-4xl font-medium text-green-600">
+                <h3 className="mt-3 text-2xl md:text-4xl font-medium text-green-600">
                   13,41 %
                 </h3>
-                <p className="mt-2 text-xl text-slate-900 font-display">
+                <p className="mt-1 md:mt-2 text-lg md:text-xl text-slate-900 font-display">
                   des exploitations agricoles en France sont certifiées BIO
                 </p>
                 <p className="mt-4 text-sm text-slate-600">
@@ -280,13 +251,62 @@ export default function Home() {
                   biodiversité causé par l&apos;utilisation de pesticides.
                 </p>
               </div>
+              <div className="relative mt-12 md:mt-12">
+                <div className="w-9">
+                  <span className="block m-auto text-3xl md:text-4xl">💨</span>
+                </div>
+                <h3 className="mt-3 text-2xl md:text-4xl font-medium text-green-600">
+                  24%
+                </h3>
+                <p className="mt-1 md:mt-2 text-xl text-slate-900 font-display">
+                  des émissions de gaz à effet de serre proviennent de
+                  l&apos;agriculture
+                </p>
+                <p className="mt-4 text-sm text-slate-600">
+                  Environ 24% des émissions mondiales de gaz à effet de serre
+                  sont attribuables à l&apos;agriculture. La transition
+                  agroécologique vise à réduire ces émissions en favorisant des
+                  pratiques agricoles respectueuses du climat.
+                </p>
+              </div>
+              <div className="relative mt-12 md:mt-12">
+                <div className="w-9">
+                  <span className="block m-auto text-3xl md:text-4xl">💧</span>
+                </div>
+                <h3 className="mt-3 text-2xl md:text-4xl font-medium text-green-600">
+                  50 %
+                </h3>
+                <p className="mt-1 md:mt-2 text-xl text-slate-900 font-display">
+                  des écosystèmes aquatiques sont dégradés
+                </p>
+                <p className="mt-4 text-sm text-slate-600">
+                  Environ 50% des écosystèmes aquatiques sont dégradés en raison
+                  de la pollution agricole. La transition agroécologique promeut
+                  des pratiques agricoles durables pour préserver la qualité de
+                  l&apos;eau et la santé des écosystèmes aquatiques.
+                </p>
+              </div>
+              <div className="relative mt-12 md:mt-12">
+                <div className="w-9">
+                  <span className="block m-auto text-3xl md:text-4xl">🐝</span>
+                </div>
+                <h3 className="mt-3 text-2xl md:text-4xl font-medium text-green-600">
+                  40%
+                </h3>
+                <p className="mt-1 md:mt-2 text-xl text-slate-900 font-display">
+                  de perte de la biodiversité des pollinisateurs
+                </p>
+                <p className="mt-4 text-sm text-slate-600">
+                  Environ 40% des espèces de pollinisateurs, tels que les
+                  abeilles et les papillons, déclinent. La transition
+                  agroécologique promeut des pratiques agricoles favorables aux
+                  pollinisateurs pour préserver leur rôle vital dans la
+                  pollinisation des cultures.
+                </p>
+              </div>
             </div>
 
             <div className="mt-20 flex flex-col justify-center items-center max-w-2xl mx-auto text-center">
-              <div className={"inline-block mb-6 text-lg font-medium"}>
-                Votre argent peut déjà avoir un impact important,
-                <br /> n&apos;attendez pas que la loi vous y oblige
-              </div>
               <div>
                 <a
                   className="group inline-flex items-center justify-center rounded-full py-4 px-8 text-lg font-semibold focus:outline-none focus-visible:outline-2 focus-visible:outline-offset-2 bg-green-200 text-green-900 hover:bg-green-300 hover:text-black active:bg-green-400 focus-visible:outline-slate-900"
