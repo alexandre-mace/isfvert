@@ -70,7 +70,7 @@ export default function Home() {
             16 tonnes de CO2eq pour un petit investissement de 1000 euros. De
             plus, leur niveau de vie élevé entraîne une empreinte carbone
             disproportionnée, avec les 1% les plus riches générant deux fois
-            plus d&pos;émissions de CO2 que la moitié la plus pauvre de la
+            plus d&apos;émissions de CO2 que la moitié la plus pauvre de la
             population mondiale.
           </p>
         </div>
