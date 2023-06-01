@@ -37,17 +37,16 @@ export default function Home() {
 
         <div className={"mt-24"}>
           <h2 className={"font-display text-3xl tracking-tight sm:text-3xl"}>
-            Qu&apos;est-ce que l&apos;ISF vert ou climatique ?
+            Qu&apos;est-ce que l&apos;ISF Vert ou climatique ?
           </h2>
           <p className={"mt-4 tracking-tight text-slate-700 max-w-3xl mx-auto"}>
-            L&apos;ISF vert ou climatique est un concept émergent proposé par{" "}
+            L&apos;ISF Vert ou climatique est un concept émergent proposé par{" "}
             <a href="https://www.greenpeace.fr/isf-climatique/" target="_blank">
               Greenpeace
             </a>{" "}
             et soutenu par des politiques engagés tels que le maire de Grenoble,
-            Eric Piolle, ainsi que des candidats à la présidence tels
-            qu&apos;Anne Hidalgo, Yannick Jadot et Jean-Luc Mélenchon. Cet impôt
-            vise à combiner la fiscalité écologique et la justice sociale en
+            Eric Piolle, ainsi que des candidats à la présidence. Cet impôt vise
+            à combiner la fiscalité écologique et la justice sociale en
             intégrant l&apos;empreinte carbone des avoirs financiers dans le
             calcul de l&apos;ISF. Son objectif est de stimuler des
             investissements durables et responsables en faveur de la transition
@@ -57,7 +56,7 @@ export default function Home() {
 
         <div className={"mt-16"}>
           <h2 className={"font-display text-3xl tracking-tight sm:text-3xl"}>
-            Pourquoi taxer les fortunes dans le cadre de l&apos;ISF vert ?
+            Pourquoi taxer les fortunes dans le cadre de l&apos;ISF Vert ?
           </h2>
           <p className={"mt-4 tracking-tight text-slate-700 max-w-3xl mx-auto"}>
             La taxation des grandes fortunes repose sur la constatation que
@@ -66,33 +65,32 @@ export default function Home() {
             <a href="https://www.oxfamfrance.org/wp-content/uploads/2019/11/Rapport-La-colossale-empreinte-carbone-des-banques-fran%C3%A7aises.pdf">
               rapport conjoint des Amis de la Terre et d&apos;Oxfam
             </a>
-            , les banques ont émis 782 millions de tonnes de CO2eq en 2018, soit
-            16 tonnes de CO2eq pour un petit investissement de 1000 euros. De
-            plus, leur niveau de vie élevé entraîne une empreinte carbone
-            disproportionnée, avec les 1% les plus riches générant deux fois
-            plus d&apos;émissions de CO2 que la moitié la plus pauvre de la
-            population mondiale.
+            , les banques ont émis 782 millions de tonnes de CO2eq en 2018. Vos
+            fonds bancaires financent des activités non conformes aux accords de
+            Paris, qui vont à l&apos;encontre de la transition vers des
+            solutions durables. Cela se produit souvent à votre insu, même si
+            vous êtes déjà conscient et volontaire pour vous engager dans cette
+            transition.
           </p>
         </div>
 
         <div className={"mt-16"}>
           <h2 className={"font-display text-3xl tracking-tight sm:text-3xl"}>
-            Quels avantages offre l&apos;ISF vert ?
+            Quels avantages offre l&apos;ISF Vert ?
           </h2>
           <p className={"mt-4 tracking-tight text-slate-700 max-w-3xl mx-auto"}>
             L&apos;ISF climatique vise à inciter les grandes fortunes à orienter
-            leurs investissements vers des projets verts et durables, tels que
-            la société FEVE qui offre des opportunités d&apos;investissement
-            dans une foncière solidaire favorisant l&apos;installation des
-            agriculteurs et agricultrices de demain. Contribuez à la transition
-            écologique tout en bénéficiant d&apos;avantages fiscaux grâce à
-            votre ISF vert en France.
+            leurs investissements vers des projets verts et durables, la
+            décarbonation des moyens de transports, de l’isolation des passoires
+            thermiques, etc. Contribuez à la transition écologique tout en
+            bénéficiant d&apos;avantages fiscaux grâce à votre ISF Vert en
+            France.
           </p>
         </div>
 
         <div className="mt-24">
           <p className="font-display text-base text-slate-900">
-            Ils parlent de nous
+            Ils parlent de l&apos;ISF Vert
           </p>
           <ul
             role="list"
@@ -102,9 +100,9 @@ export default function Home() {
               <a href="https://lecercledeseconomistes.fr/un-isf-vert">
                 <Image
                   src={"/cercle-eco.png"}
-                  alt={"ISF vert et impôts sur la fortune : urgence climatique"}
-                  width={200}
-                  height={400}
+                  alt={"ISF Vert et impôts sur la fortune : urgence climatique"}
+                  width={300}
+                  height={600}
                 />
               </a>
             </li>
@@ -116,8 +114,8 @@ export default function Home() {
                 <Image
                   src={"/jpbet.png"}
                   alt={"Contribuable en France : impôts"}
-                  width={200}
-                  height={400}
+                  width={300}
+                  height={600}
                 />
               </a>
             </li>
@@ -128,9 +126,9 @@ export default function Home() {
               >
                 <Image
                   src={"/actu.png"}
-                  alt={"ISF vert et investissement : gérer mes revenus"}
-                  width={200}
-                  height={400}
+                  alt={"ISF Vert et investissement : gérer mes revenus"}
+                  width={300}
+                  height={600}
                 />
               </a>
             </li>
@@ -168,6 +166,7 @@ export default function Home() {
                 💡 Notre calcul de l&apos;ISF Vert se base sur{" "}
                 <a
                   className={"text-white"}
+                  target={"_blank"}
                   href="https://www.journaldunet.fr/patrimoine/guide-des-finances-personnelles/1202027-isf-bareme-calcul-et-simulation/"
                 >
                   l&apos;ISF historique
@@ -189,7 +188,8 @@ export default function Home() {
               <span className="text-green-600 font-medium">
                 impact important
               </span>
-              , n&apos;attendez pas que la loi vous y oblige
+              , n&apos;attendez pas que la loi ne vous oblige à passer à
+              l’action
             </h2>
             <p className="mt-4 md:text-lg tracking-tight text-slate-700">
               En investissant dans des projets agroécologiques, vous pouvez
@@ -212,8 +212,8 @@ export default function Home() {
                 <p className="mt-4 text-sm text-slate-600">
                   Selon une récente étude, la retraite imminente de nombreux
                   agriculteurs aura un impact majeur sur le secteur agricole,
-                  nécessitant des mesures adaptées pour maintenir
-                  l&apos;approvisionnement alimentaire.
+                  nécessitant des mesures adaptées pour maintenir notre
+                  souveraineté alimentaire.
                 </p>
               </div>
               <div className="relative mt-12 md:mt-0">
@@ -239,16 +239,18 @@ export default function Home() {
                   <span className="block m-auto text-3xl md:text-4xl">🥕</span>
                 </div>
                 <h3 className="mt-3 text-2xl md:text-4xl font-medium text-green-600">
-                  13,41 %
+                  13
                 </h3>
                 <p className="mt-1 md:mt-2 text-lg md:text-xl text-slate-900 font-display">
-                  des exploitations agricoles en France sont certifiées BIO
+                  seulement des exploitations agricoles en France sont
+                  certifiées BIO
                 </p>
                 <p className="mt-4 text-sm text-slate-600">
-                  Environ 13,41% des exploitations agricoles en France
-                  pratiquent l&apos;agriculture biologique, mais cela reste
-                  insuffisant pour contrer l&apos;effondrement actuel de la
-                  biodiversité causé par l&apos;utilisation de pesticides.
+                  Environ 13% des exploitations agricoles en France pratiquent
+                  l&apos;agriculture biologique, c&apos;est insuffisant pour
+                  contrer l&apos;effondrement actuel de la biodiversité causé
+                  par l&apos;utilisation de pesticides. Le Plan stratégique
+                  national (PNS) fixe l&apos;objectif à 18% en 2027.
                 </p>
               </div>
               <div className="relative mt-12 md:mt-12">

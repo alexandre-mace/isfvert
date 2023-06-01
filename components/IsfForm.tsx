@@ -81,7 +81,7 @@ const IsfForm = () => {
           <p>
             ISF estimé :{" "}
             <span id="isf-amount" className="font-medium text-xl">
-              {isfAmount.toFixed(2)} €
+              {isfAmount.toFixed(0)} €
             </span>
           </p>
           <a
