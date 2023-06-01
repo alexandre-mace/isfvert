@@ -310,7 +310,7 @@ export default function Home() {
               <div>
                 <a
                   className="group inline-flex items-center justify-center rounded-full py-4 px-8 text-lg font-semibold focus:outline-none focus-visible:outline-2 focus-visible:outline-offset-2 bg-green-200 text-green-900 hover:bg-green-300 hover:text-black active:bg-green-400 focus-visible:outline-slate-900"
-                  href="https://feve.co/investir/souscription"
+                  href="https://feve.co/investir"
                 >
                   J&apos;investis dans l&apos;agroécologie 👨‍🌾
                 </a>
