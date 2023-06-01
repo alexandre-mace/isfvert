@@ -118,40 +118,15 @@ export default function Home() {
             </div>
 
             <div className={"mt-2 text-white text-start"}>
-              <h2 className={"font-display text-2xl tracking-tight sm:text-xl"}>
-                💡 Notre calcul de l&apos;ISF Vert : Barème, seuil
-                d&apos;imposition et calcul
-              </h2>
-              <p className={"mt-4 tracking-tight max-w-3xl mx-auto text-sm"}>
-                <b>Seuil d&apos;imposition</b> : Vous êtes imposable à
-                l&apos;ISF si votre patrimoine net taxable dépasse 1 300 000 €.
+              <p className={"font-display tracking-tight"}>
+                💡 Notre calcul de l&apos;ISF Vert se base sur{" "}
+                <a
+                  className={"text-white"}
+                  href="https://www.journaldunet.fr/patrimoine/guide-des-finances-personnelles/1202027-isf-bareme-calcul-et-simulation/"
+                >
+                  l&apos;ISF historique
+                </a>
               </p>
-              <p className={"mt-4 tracking-tight max-w-3xl mx-auto text-sm"}>
-                <b>Début du calcul</b> : Lorsque vous êtes imposable à
-                l&apos;ISF, le calcul commence à partir de 800 000 €.
-              </p>
-
-              <div className={"text-sm mt-3"}>
-                <b>Barème progressif</b> :
-                <ul>
-                  <li>
-                    Patrimoine net taxable entre 0 et 800 000 € : 0%
-                    d&apos;imposition.
-                  </li>
-                  <li>
-                    Patrimoine net taxable entre 800 000 € et 1 300 000 € : 0,5%
-                    d&apos;imposition sur la partie excédant 800 000 €.
-                  </li>
-                  <li>
-                    Patrimoine net taxable entre 1 300 000 € et 2 570 000 € :
-                    0,7% d&apos;imposition.
-                  </li>
-                  <li>
-                    Patrimoine net taxable au-delà de 10 000 000 € : 1,5%
-                    d&apos;imposition.
-                  </li>
-                </ul>
-              </div>
             </div>
           </div>
         </div>
