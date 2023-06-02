@@ -1,5 +1,6 @@
 import IsfForm from "@/components/IsfForm";
 import Image from "next/image";
+import Share from "@/components/Share";
 
 export default function Home() {
   return (
@@ -28,11 +29,22 @@ export default function Home() {
         </p>
         <div className="mt-10 flex justify-center gap-x-6">
           <a
-            className="group inline-flex items-center justify-center rounded-full py-3 px-6 font-semibold focus:outline-none focus-visible:outline-2 focus-visible:outline-offset-2 bg-green-200 text-green-900 hover:bg-green-300 hover:text-black active:bg-green-400 focus-visible:outline-slate-900"
+            className="group inline-flex items-center justify-center rounded-full py-3 px-6 font-medium focus:outline-none focus-visible:outline-2 focus-visible:outline-offset-2 bg-green-200 text-green-900 hover:bg-green-300 hover:text-black active:bg-green-400 focus-visible:outline-slate-900"
             href="#calcul"
           >
             Je calcule mon ISF 👇
           </a>
+          <Share />
+        </div>
+
+        <div className={"mt-16 flex justify-center"}>
+          <Image
+            src={"/isf.webp"}
+            alt={"Photo justice argent"}
+            height={318}
+            width={462}
+            className={"rounded"}
+          />
         </div>
 
         <div className={"mt-24"}>
@@ -40,23 +52,27 @@ export default function Home() {
             Qu&apos;est-ce que l&apos;ISF Vert ou climatique ?
           </h2>
           <p className={"mt-4 tracking-tight text-slate-700 max-w-3xl mx-auto"}>
-            L&apos;ISF Vert ou climatique est un concept émergent proposé par{" "}
+            L&apos;ISF Vert, également connu sous le nom d&apos;ISF Climatique,
+            est un concept émergent proposé par{" "}
             <a href="https://www.greenpeace.fr/isf-climatique/" target="_blank">
               Greenpeace
             </a>{" "}
-            et soutenu par des politiques engagés tels que le maire de Grenoble,
-            Eric Piolle, ainsi que des candidats à la présidence. Cet impôt vise
-            à combiner la fiscalité écologique et la justice sociale en
-            intégrant l&apos;empreinte carbone des avoirs financiers dans le
-            calcul de l&apos;ISF. Son objectif est de stimuler des
-            investissements durables et responsables en faveur de la transition
-            écologique en France.
+            et soutenu par des politiciens engagés tels que le maire de
+            Grenoble, Eric Piolle. Récemment, le <b>22 mai 2023</b>, la Première
+            ministre a publié le <b>rapport de France Stratégie</b>, dans lequel
+            Jean Pisani-Ferry recommande{" "}
+            <b>l&apos;instauration d&apos;une taxe sur le patrimoine</b> des
+            plus aisés. Cet impôt vise à combiner la fiscalité écologique et la
+            justice sociale en incluant l&apos;empreinte carbone des avoirs
+            financiers dans le calcul de l&apos;ISF. Son objectif est de
+            <b>promouvoir des investissements durables et responsables</b> en
+            faveur de la transition écologique en France.
           </p>
         </div>
 
         <div className={"mt-16"}>
           <h2 className={"font-display text-3xl tracking-tight sm:text-3xl"}>
-            Pourquoi taxer les fortunes dans le cadre de l&apos;ISF Vert ?
+            Pourquoi votre argent à un impact important ?
           </h2>
           <p className={"mt-4 tracking-tight text-slate-700 max-w-3xl mx-auto"}>
             La taxation des grandes fortunes repose sur la constatation que
@@ -66,10 +82,11 @@ export default function Home() {
               rapport conjoint des Amis de la Terre et d&apos;Oxfam
             </a>
             , les banques ont émis 782 millions de tonnes de CO2eq en 2018. Vos
-            fonds bancaires financent des activités non conformes aux accords de
-            Paris, qui vont à l&apos;encontre de la transition vers des
-            solutions durables. Cela se produit souvent à votre insu, même si
-            vous êtes déjà conscient et volontaire pour vous engager dans cette
+            fonds bancaires financent des{" "}
+            <b>activités non conformes aux accords de Paris</b>, qui vont à
+            l&apos;encontre de la transition vers des solutions durables. Cela
+            se produit souvent à votre insu, même si vous êtes déjà{" "}
+            <b>conscient et volontaire</b> pour vous engager dans cette
             transition.
           </p>
         </div>
@@ -80,11 +97,11 @@ export default function Home() {
           </h2>
           <p className={"mt-4 tracking-tight text-slate-700 max-w-3xl mx-auto"}>
             L&apos;ISF climatique vise à inciter les grandes fortunes à orienter
-            leurs investissements vers des projets verts et durables, la
+            <b>leurs investissements vers des projets verts et durables</b>, la
             décarbonation des moyens de transports, de l’isolation des passoires
-            thermiques, etc. Contribuez à la transition écologique tout en
-            bénéficiant d&apos;avantages fiscaux grâce à votre ISF Vert en
-            France.
+            thermiques, etc. Contribuez à la <b>transition écologique</b> tout
+            en bénéficiant d<b>&apos;avantages fiscaux</b> grâce à votre ISF
+            Vert en France.
           </p>
         </div>
 
@@ -161,7 +178,7 @@ export default function Home() {
               </div>
             </div>
 
-            <div className={"mt-2 text-white text-start"}>
+            <div className={"mt-2 text-white text-start text-sm"}>
               <p className={"font-display tracking-tight"}>
                 💡 Notre calcul de l&apos;ISF Vert se base sur{" "}
                 <a
@@ -171,6 +188,11 @@ export default function Home() {
                 >
                   l&apos;ISF historique
                 </a>
+              </p>
+              <p className={"font-display tracking-tight"}>
+                Nous avons pris comme hypothèse, dans ce simulateur, que tout
+                placement vert est déduit de votre patrimoine pour le calcul de
+                l&apos;ISF Vert.
               </p>
             </div>
           </div>
@@ -239,7 +261,7 @@ export default function Home() {
                   <span className="block m-auto text-3xl md:text-4xl">🥕</span>
                 </div>
                 <h3 className="mt-3 text-2xl md:text-4xl font-medium text-green-600">
-                  13
+                  13 %
                 </h3>
                 <p className="mt-1 md:mt-2 text-lg md:text-xl text-slate-900 font-display">
                   seulement des exploitations agricoles en France sont
@@ -311,11 +333,14 @@ export default function Home() {
             <div className="mt-20 flex flex-col justify-center items-center max-w-2xl mx-auto text-center">
               <div>
                 <a
-                  className="group inline-flex items-center justify-center rounded-full py-4 px-8 text-lg font-semibold focus:outline-none focus-visible:outline-2 focus-visible:outline-offset-2 bg-green-200 text-green-900 hover:bg-green-300 hover:text-black active:bg-green-400 focus-visible:outline-slate-900"
+                  className="group inline-flex items-center justify-center rounded-full py-4 px-8 text-lg font-medium focus:outline-none focus-visible:outline-2 focus-visible:outline-offset-2 bg-green-200 text-green-900 hover:bg-green-300 hover:text-black active:bg-green-400 focus-visible:outline-slate-900"
                   href="https://feve.co/investir"
                 >
                   J&apos;investis dans l&apos;agroécologie 👨‍🌾
                 </a>
+              </div>
+              <div className={"mt-8"}>
+                <Share />
               </div>
             </div>
           </div>
