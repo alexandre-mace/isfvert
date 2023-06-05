@@ -57,22 +57,21 @@ export default function Home() {
             <a href="https://www.greenpeace.fr/isf-climatique/" target="_blank">
               Greenpeace
             </a>{" "}
-            et soutenu par des politiciens engagés tels que le maire de
-            Grenoble, Eric Piolle. Récemment, le <b>22 mai 2023</b>, la Première
-            ministre a publié le <b>rapport de France Stratégie</b>, dans lequel
-            Jean Pisani-Ferry recommande{" "}
+            . Récemment, le <b>22 mai 2023</b>, la Première ministre a publié le{" "}
+            <b>rapport de France Stratégie</b>, dans lequel Jean Pisani-Ferry
+            recommande{" "}
             <b>l&apos;instauration d&apos;une taxe sur le patrimoine</b> des
             plus aisés. Cet impôt vise à combiner la fiscalité écologique et la
             justice sociale en incluant l&apos;empreinte carbone des avoirs
             financiers dans le calcul de l&apos;ISF. Son objectif est de
-            <b>promouvoir des investissements durables et responsables</b> en
+            <b> promouvoir des investissements durables et responsables</b> en
             faveur de la transition écologique en France.
           </p>
         </div>
 
         <div className={"mt-16"}>
           <h2 className={"font-display text-3xl tracking-tight sm:text-3xl"}>
-            Pourquoi votre argent à un impact important ?
+            Pourquoi votre argent a un impact important ?
           </h2>
           <p className={"mt-4 tracking-tight text-slate-700 max-w-3xl mx-auto"}>
             La taxation des grandes fortunes repose sur la constatation que
@@ -83,10 +82,13 @@ export default function Home() {
             </a>
             , les banques ont émis 782 millions de tonnes de CO2eq en 2018. Vos
             fonds bancaires financent des{" "}
-            <b>activités non conformes aux accords de Paris</b>, qui vont à
-            l&apos;encontre de la transition vers des solutions durables. Cela
-            se produit souvent à votre insu, même si vous êtes déjà{" "}
-            <b>conscient et volontaire</b> pour vous engager dans cette
+            <b>
+              activités non conformes aux accords de Paris (par exemple des
+              nouveaux projets d’extraction d’énergie fossile)
+            </b>
+            , qui vont à l&apos;encontre de la transition vers des solutions
+            durables. Cela se produit souvent à votre insu, même si vous êtes
+            déjà <b>conscient et volontaire</b> pour vous engager dans cette
             transition.
           </p>
         </div>
@@ -97,8 +99,8 @@ export default function Home() {
           </h2>
           <p className={"mt-4 tracking-tight text-slate-700 max-w-3xl mx-auto"}>
             L&apos;ISF climatique vise à inciter les grandes fortunes à orienter
-            <b>leurs investissements vers des projets verts et durables</b>, la
-            décarbonation des moyens de transports, de l’isolation des passoires
+            <b> leurs investissements vers des projets verts et durables : </b>,
+            la décarbonation des moyens de transports, l’isolation des passoires
             thermiques, etc. Contribuez à la <b>transition écologique</b> tout
             en bénéficiant d<b>&apos;avantages fiscaux</b> grâce à votre ISF
             Vert en France.
@@ -106,7 +108,7 @@ export default function Home() {
         </div>
 
         <div className="mt-24">
-          <p className="font-display text-base text-slate-900">
+          <p className="font-display text-3xl tracking-tight sm:text-3xl text-slate-900">
             Ils parlent de l&apos;ISF Vert
           </p>
           <ul
@@ -164,7 +166,7 @@ export default function Home() {
               Votre simulation en 1 clic ⚡️
             </div>
             <p className="mt-6 text-lg tracking-tight text-green-100">
-              Grâce à notre simulateur, estimer rapidement et simplement votre
+              Grâce à notre simulateur, estimez rapidement et simplement votre
               Impôt sur la Fortune Vert
             </p>
           </div>
@@ -191,8 +193,8 @@ export default function Home() {
               </p>
               <p className={"font-display tracking-tight"}>
                 Nous avons pris comme hypothèse, dans ce simulateur, que tout
-                placement vert est déduit de votre patrimoine pour le calcul de
-                l&apos;ISF Vert.
+                placement vert est déduit de la base taxable de votre patrimoine
+                pour le calcul de l&apos;ISF Vert.
               </p>
             </div>
           </div>
@@ -210,8 +212,7 @@ export default function Home() {
               <span className="text-green-600 font-medium">
                 impact important
               </span>
-              , n&apos;attendez pas que la loi ne vous oblige à passer à
-              l’action
+              , n&apos;attendez pas que la loi vous oblige à passer à l’action
             </h2>
             <p className="mt-4 md:text-lg tracking-tight text-slate-700">
               En investissant dans des projets agroécologiques, vous pouvez
@@ -346,6 +347,33 @@ export default function Home() {
           </div>
         </div>
       </section>
+      <footer className={"bg-slate-100 py-20"}>
+        <div className={"container mx-auto"}>
+          <span className={"inline-block"}>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              strokeWidth="1.5"
+              stroke="currentColor"
+              className="w-6 h-6 translate-y-1 -translate-x-1"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M11.25 11.25l.041-.02a.75.75 0 011.063.852l-.708 2.836a.75.75 0 001.063.853l.041-.021M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-9-3.75h.008v.008H12V8.25z"
+              />
+            </svg>
+          </span>
+          Cette page web a été créée par FEVE, une entreprise à mission de
+          l’économie sociale et solidaire, pour sensibiliser aux enjeux de la
+          transition agroécologique, et à l’impact positif que peut avoir
+          l’épargne citoyenne pour financer le monde de demain. L’ISF Vert est
+          au cœur des débats politiques mais n’est en aucun cas une réalité à ce
+          stade. Ne paniquez pas ! Mais n’hésitez pas à prendre votre part dès
+          maintenant.
+        </div>
+      </footer>
     </main>
   );
 }
