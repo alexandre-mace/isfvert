@@ -35,8 +35,24 @@ const IsfForm = () => {
     <>
       <form id="isf-form" className="max-w-md" onSubmit={handleSubmit}>
         <div className="mb-4">
-          <label className="block font-bold mb-2" htmlFor="patrimoine">
+          <label className="relative block font-bold mb-2" htmlFor="patrimoine">
             Valeur du patrimoine :
+            <span className={"absolute -left-10"}>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                strokeWidth="1.5"
+                stroke="currentColor"
+                className="w-6 h-6"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M12 4.5v15m7.5-7.5h-15"
+                />
+              </svg>
+            </span>
           </label>
           <input
             className="w-full px-3 py-2 border border-gray-300 rounded focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-green-600"
@@ -46,8 +62,27 @@ const IsfForm = () => {
             required
             onChange={(e) => setPatrimoine(e.target.value)}
           />
-          <label className="block font-bold mb-2 mt-4" htmlFor="patrimoine">
+          <label
+            className="relative block font-bold mb-2 mt-4"
+            htmlFor="patrimoine"
+          >
             Valeur de vos placements verts :
+            <span className={"absolute -left-10"}>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                strokeWidth="1.5"
+                stroke="currentColor"
+                className="w-6 h-6"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M19.5 12h-15"
+                />
+              </svg>
+            </span>
           </label>
           <input
             className="w-full px-3 py-2 border border-gray-300 rounded focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-green-600"
@@ -57,7 +92,17 @@ const IsfForm = () => {
             required
             onChange={(e) => setGreenInvestments(e.target.value)}
           />
-          <div className="flex items-center space-x-2 mt-4">
+          <div className={"mt-2"}>
+            Base taxable ISF Vert :{" "}
+            <span className={"font-bold"}>
+              {Math.round(
+                parseFloat(patrimoine ? patrimoine : String(0)) -
+                  parseFloat(greenInvestments ? greenInvestments : String(0))
+              )}{" "}
+              €
+            </span>
+          </div>
+          <div className="flex items-center space-x-2 mt-2">
             <Checkbox id="terms" required={true} />
             <label
               htmlFor="terms"
@@ -68,6 +113,7 @@ const IsfForm = () => {
             </label>
           </div>
         </div>
+
         <button
           className="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded"
           type="submit"

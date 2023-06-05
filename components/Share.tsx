@@ -111,7 +111,7 @@ function Share() {
                 <EmailShareButton
                   url={shareUrl}
                   subject={title}
-                  body="body"
+                  body="J'ai découvert un super site pour calculer son ISF Vert volontaire"
                   className="Demo__some-network__share-button"
                 >
                   <EmailIcon size={32} round />

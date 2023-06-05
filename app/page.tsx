@@ -215,8 +215,27 @@ export default function Home() {
               , n&apos;attendez pas que la loi vous oblige à passer à l’action
             </h2>
             <p className="mt-4 md:text-lg tracking-tight text-slate-700">
-              En investissant dans des projets agroécologiques, vous pouvez
-              réduire votre Impôt de Solidarité sur la Fortune (ISF) et soutenir
+              En investissant dans des projets agroécologiques, vous pouvez{" "}
+              <a href="#footer" className={"underline"}>
+                réduire
+                <span className={"inline-block ml-2"}>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    strokeWidth="1.5"
+                    stroke="currentColor"
+                    className="w-5 h-5 translate-y-1 -translate-x-1"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      d="M11.25 11.25l.041-.02a.75.75 0 011.063.852l-.708 2.836a.75.75 0 001.063.853l.041-.021M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-9-3.75h.008v.008H12V8.25z"
+                    />
+                  </svg>
+                </span>
+              </a>{" "}
+              votre Impôt de Solidarité sur la Fortune (ISF) et soutenir
               activement l&apos;agriculture durable.
             </p>
           </div>
@@ -347,7 +366,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <footer className={"bg-slate-100 py-20"}>
+      <footer className={"bg-slate-100 py-20"} id={"footer"}>
         <div className={"container mx-auto"}>
           <span className={"inline-block"}>
             <svg
