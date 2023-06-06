@@ -165,7 +165,7 @@ export default function Home() {
             <div className="font-display text-3xl tracking-tight text-white sm:text-4xl md:text-5xl">
               Votre simulation en 1 clic ⚡️
             </div>
-            <p className="mt-6 text-lg tracking-tight text-green-100">
+            <p className="mt-6 text-lg tracking-tight text-white">
               Grâce à notre simulateur, estimez rapidement et simplement votre
               Impôt sur la Fortune Vert
             </p>
