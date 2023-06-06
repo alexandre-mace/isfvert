@@ -384,13 +384,16 @@ export default function Home() {
               />
             </svg>
           </span>
-          Cette page web a été créée par FEVE, une entreprise à mission de
-          l’économie sociale et solidaire, pour sensibiliser aux enjeux de la
-          transition agroécologique, et à l’impact positif que peut avoir
-          l’épargne citoyenne pour financer le monde de demain. L’ISF Vert est
-          au cœur des débats politiques mais n’est en aucun cas une réalité à ce
-          stade. Ne paniquez pas ! Mais n’hésitez pas à prendre votre part dès
-          maintenant.
+          Cette page web a été créée par{" "}
+          <a className={"underline"} href="https://feve.co" target="_blank">
+            FEVE
+          </a>{" "}
+          , une entreprise à mission de l’économie sociale et solidaire, pour
+          sensibiliser aux enjeux de la transition agroécologique, et à l’impact
+          positif que peut avoir l’épargne citoyenne pour financer le monde de
+          demain. L’ISF Vert est au cœur des débats politiques mais n’est en
+          aucun cas une réalité à ce stade. Ne paniquez pas ! Mais n’hésitez pas
+          à prendre votre part dès maintenant.
         </div>
       </footer>
     </main>
