@@ -103,7 +103,7 @@ const IsfForm = () => {
             </span>
           </div>
           <div className="flex items-center space-x-2 mt-2">
-            <Checkbox id="terms" required={true} />
+            <Checkbox id="terms" name={"termes"} required={true} />
             <label
               htmlFor="terms"
               className="text-sm leading-4 leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
