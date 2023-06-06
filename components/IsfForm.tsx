@@ -103,7 +103,7 @@ const IsfForm = () => {
             </span>
           </div>
           <div className="flex items-center space-x-2 mt-2">
-            <Checkbox id="terms" name={"termes"} required={true} />
+            <Checkbox id="terms" required={true} aria-label={"termes"} />
             <label
               htmlFor="terms"
               className="text-sm leading-4 leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
@@ -115,7 +115,7 @@ const IsfForm = () => {
         </div>
 
         <button
-          className="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded"
+          className="bg-green-600 hover:bg-green-600 text-white font-medium py-2 px-4 rounded"
           type="submit"
         >
           Calculer
