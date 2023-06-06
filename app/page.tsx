@@ -70,9 +70,9 @@ export default function Home() {
         </div>
 
         <div className={"mt-16"}>
-          <h2 className={"font-display text-3xl tracking-tight sm:text-3xl"}>
+          <h3 className={"font-display text-3xl tracking-tight sm:text-3xl"}>
             Pourquoi votre argent a un impact important ?
-          </h2>
+          </h3>
           <p className={"mt-4 tracking-tight text-slate-700 max-w-3xl mx-auto"}>
             La taxation des grandes fortunes repose sur la constatation que
             leurs placements financiers soutiennent souvent des activités
@@ -207,37 +207,34 @@ export default function Home() {
       >
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="mx-auto max-w-2xl md:text-center">
-            <h2 className="font-display text-2xl tracking-tight text-slate-900 sm:text-3xl">
+            <div className="font-display text-2xl tracking-tight text-slate-900 sm:text-3xl">
               Votre argent a déjà un{" "}
               <span className="text-green-600 font-medium">
                 impact important
               </span>
               , n&apos;attendez pas que la loi vous oblige à passer à l’action
-            </h2>
-            <p className="mt-4 md:text-lg tracking-tight text-slate-700">
-              En investissant dans des projets agroécologiques, vous pouvez{" "}
-              <a href="#footer" className={"underline"}>
-                réduire
-                <span className={"inline-block ml-2"}>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    strokeWidth="1.5"
-                    stroke="currentColor"
-                    className="w-5 h-5 translate-y-1 -translate-x-1"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      d="M11.25 11.25l.041-.02a.75.75 0 011.063.852l-.708 2.836a.75.75 0 001.063.853l.041-.021M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-9-3.75h.008v.008H12V8.25z"
-                    />
-                  </svg>
-                </span>
-              </a>{" "}
-              votre Impôt de Solidarité sur la Fortune (ISF) et soutenir
-              activement l&apos;agriculture durable.
-            </p>
+            </div>
+
+            <div className={"mt-16 mb-10"}>
+              <h3
+                className={"font-display font-medium text-2xl tracking-tight"}
+              >
+                L&apos;agroécologie, le secteur de choix pour réduire votre ISF
+                Vert
+              </h3>
+              <p
+                className={
+                  "mt-4 tracking-tight text-slate-700 max-w-3xl mx-auto md:text-lg"
+                }
+              >
+                L&apos;agroécologie est LA solution pour réduire de manière
+                significative l&apos;impact environnemental de
+                l&apos;agriculture et soutenir la transition écologique. En
+                adoptant des pratiques respectueuses de l&apos;environnement,
+                elle régénère les sols, préserve la biodiversité et renforce la
+                résilience des exploitations agricoles.
+              </p>
+            </div>
           </div>
           <div className="lg:mt-20 block">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-x-8">
@@ -245,9 +242,9 @@ export default function Home() {
                 <div className="w-9">
                   <span className="block m-auto text-3xl md:text-4xl">⏰</span>
                 </div>
-                <h3 className="mt-3 text-2xl md:text-4xl font-medium text-green-600">
+                <div className="mt-3 text-2xl md:text-4xl font-medium text-green-600">
                   50 %
-                </h3>
+                </div>
                 <p className="mt-1 md:mt-2 text-lg md:text-xl text-slate-900 font-display">
                   des agriculteurs partent à la retraite dans les 10 ans à venir
                 </p>
@@ -262,9 +259,9 @@ export default function Home() {
                 <div className="w-9">
                   <span className="block m-auto text-3xl md:text-4xl">🧑‍🌾</span>
                 </div>
-                <h3 className="mt-3 text-2xl md:text-4xl font-medium text-green-600">
+                <div className="mt-3 text-2xl md:text-4xl font-medium text-green-600">
                   200 000
-                </h3>
+                </div>
                 <p className="mt-1 md:mt-2 text-lg md:text-xl text-slate-900 font-display">
                   fermes à reprendre avec une reprise hors cadre familiale
                   complexe
@@ -280,9 +277,9 @@ export default function Home() {
                 <div className="w-9">
                   <span className="block m-auto text-3xl md:text-4xl">🥕</span>
                 </div>
-                <h3 className="mt-3 text-2xl md:text-4xl font-medium text-green-600">
+                <div className="mt-3 text-2xl md:text-4xl font-medium text-green-600">
                   13 %
-                </h3>
+                </div>
                 <p className="mt-1 md:mt-2 text-lg md:text-xl text-slate-900 font-display">
                   seulement des exploitations agricoles en France sont
                   certifiées BIO
@@ -299,9 +296,9 @@ export default function Home() {
                 <div className="w-9">
                   <span className="block m-auto text-3xl md:text-4xl">💨</span>
                 </div>
-                <h3 className="mt-3 text-2xl md:text-4xl font-medium text-green-600">
+                <div className="mt-3 text-2xl md:text-4xl font-medium text-green-600">
                   24%
-                </h3>
+                </div>
                 <p className="mt-1 md:mt-2 text-xl text-slate-900 font-display">
                   des émissions de gaz à effet de serre proviennent de
                   l&apos;agriculture
@@ -317,9 +314,9 @@ export default function Home() {
                 <div className="w-9">
                   <span className="block m-auto text-3xl md:text-4xl">💧</span>
                 </div>
-                <h3 className="mt-3 text-2xl md:text-4xl font-medium text-green-600">
+                <div className="mt-3 text-2xl md:text-4xl font-medium text-green-600">
                   50 %
-                </h3>
+                </div>
                 <p className="mt-1 md:mt-2 text-xl text-slate-900 font-display">
                   des écosystèmes aquatiques sont dégradés
                 </p>
@@ -334,9 +331,9 @@ export default function Home() {
                 <div className="w-9">
                   <span className="block m-auto text-3xl md:text-4xl">🐝</span>
                 </div>
-                <h3 className="mt-3 text-2xl md:text-4xl font-medium text-green-600">
+                <div className="mt-3 text-2xl md:text-4xl font-medium text-green-600">
                   40%
-                </h3>
+                </div>
                 <p className="mt-1 md:mt-2 text-xl text-slate-900 font-display">
                   de perte de la biodiversité des pollinisateurs
                 </p>
@@ -351,6 +348,32 @@ export default function Home() {
             </div>
 
             <div className="mt-20 flex flex-col justify-center items-center max-w-2xl mx-auto text-center">
+              <p className="mt-4  mb-10 md:text-lg tracking-tight text-slate-700">
+                En investissant dans des projets agroécologiques, vous pouvez
+                ainsi{" "}
+                <a href="#footer" className={"underline"}>
+                  réduire
+                  <span className={"inline-block ml-2"}>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      strokeWidth="1.5"
+                      stroke="currentColor"
+                      className="w-5 h-5 translate-y-1 -translate-x-1"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        d="M11.25 11.25l.041-.02a.75.75 0 011.063.852l-.708 2.836a.75.75 0 001.063.853l.041-.021M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-9-3.75h.008v.008H12V8.25z"
+                      />
+                    </svg>
+                  </span>
+                </a>{" "}
+                votre Impôt de Solidarité sur la Fortune (ISF) et soutenir
+                activement l&apos;agriculture durable.
+              </p>
+
               <div>
                 <a
                   className="group inline-flex items-center justify-center rounded-full py-4 px-8 text-lg font-medium focus:outline-none focus-visible:outline-2 focus-visible:outline-offset-2 bg-green-200 text-green-900 hover:bg-green-300 hover:text-black active:bg-green-400 focus-visible:outline-slate-900"
