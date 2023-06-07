@@ -370,8 +370,8 @@ export default function Home() {
                     </svg>
                   </span>
                 </a>{" "}
-                votre Impôt de Solidarité sur la Fortune (ISF) et soutenir
-                activement l&apos;agriculture durable.
+                votre Impôt de Solidarité sur la Fortune Vert (ISF Vert) et
+                soutenir activement l&apos;agriculture durable.
               </p>
 
               <div>
