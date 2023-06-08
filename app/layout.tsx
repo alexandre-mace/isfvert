@@ -5,9 +5,9 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
   title:
-    "Calculer mon ISF vert en ligne : Estimer votre impôt écologique en France",
+    "Calculer mon ISF vert ou ISF climatique en ligne : Estimer votre impôt écologique en France",
   description:
-    "Utilisez notre outil de calcul en ligne pour estimer votre ISF vert, l'impôt qui intègre l'empreinte carbone des avoirs financiers. Découvrez comment réduire cet impôt en investissant dans la transition écologique et bénéficiez d'avantages fiscaux. Contribuez à la lutte contre l'urgence climatique avec votre ISF vert.",
+    "Utilisez notre outil de calcul en ligne pour estimer votre ISF vert ou ISF climatique, l'impôt qui intègre l'empreinte carbone des avoirs financiers. Découvrez comment réduire cet impôt en investissant dans la transition écologique et bénéficiez d'avantages fiscaux. Contribuez à la lutte contre l'urgence climatique avec votre ISF vert.",
 };
 
 export default function RootLayout({
