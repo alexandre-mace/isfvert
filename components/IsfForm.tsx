@@ -137,7 +137,9 @@ const IsfForm = () => {
             className="group inline-flex items-center justify-center rounded-full py-3 px-6 font-semibold focus:outline-none focus-visible:outline-2 focus-visible:outline-offset-2 bg-green-200 text-green-900 hover:bg-green-300 hover:text-black active:bg-green-400 focus-visible:outline-slate-900 mt-4"
             href="#reduire"
           >
-            Découvrez comment réduire ce montant 👇
+            {Number(isfAmount.toFixed(0)) === 0
+              ? "Vous pouvez quand même aider la transition 👇"
+              : "Découvrez comment réduire ce montant 👇"}
           </a>
         </div>
       )}
