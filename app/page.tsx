@@ -6,7 +6,7 @@ import Matomo from "@/components/Matomo";
 export default function Home() {
   return (
     <main>
-      <Matomo />
+      {/*<Matomo />*/}
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 pb-16 sm:pb-32 pt-20 text-center lg:pt-32">
         <h1 className="mx-auto max-w-4xl font-display text-5xl font-medium tracking-tight text-slate-900 sm:text-7xl">
           Calculez votre
@@ -165,7 +165,12 @@ export default function Home() {
         <div className="mx-auto max-w-2xl px-4 sm:px-6 lg:px-8 relative">
           <div className="max-w-2xl md:mx-auto md:text-center xl:max-w-none">
             <div className="font-display text-3xl tracking-tight text-white sm:text-4xl md:text-5xl">
-              Votre simulation en 1 clic ⚡️
+              Votre simulation en 1 clic{" "}
+              <img
+                src="https://em-content.zobj.net/thumbs/240/apple/354/high-voltage_26a1.png"
+                alt="Rapidité"
+                className={"h-12 w-12 inline"}
+              />
             </div>
             <p className="mt-6 text-lg tracking-tight text-white">
               Grâce à notre simulateur, estimez rapidement et simplement votre
@@ -242,7 +247,13 @@ export default function Home() {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-x-8">
               <div className="relative mt-12 md:mt-0">
                 <div className="w-9">
-                  <span className="block m-auto text-3xl md:text-4xl">⏰</span>
+                  <span className="block m-auto text-3xl md:text-4xl">
+                    <img
+                      src="https://em-content.zobj.net/thumbs/240/apple/354/alarm-clock_23f0.png"
+                      alt="Réveil"
+                      className={"h-8 w-8 inline-block"}
+                    />
+                  </span>
                 </div>
                 <div className="mt-3 text-2xl md:text-4xl font-medium text-green-600">
                   50 %
@@ -259,7 +270,13 @@ export default function Home() {
               </div>
               <div className="relative mt-12 md:mt-0">
                 <div className="w-9">
-                  <span className="block m-auto text-3xl md:text-4xl">🧑‍🌾</span>
+                  <span className="block m-auto text-3xl md:text-4xl">
+                    <img
+                      src="https://em-content.zobj.net/thumbs/240/apple/354/farmer_1f9d1-200d-1f33e.png"
+                      alt="Agriculteur"
+                      className={"h-8 w-8 inline-block"}
+                    />
+                  </span>
                 </div>
                 <div className="mt-3 text-2xl md:text-4xl font-medium text-green-600">
                   200 000
@@ -277,7 +294,13 @@ export default function Home() {
               </div>
               <div className="relative mt-12 md:mt-0">
                 <div className="w-9">
-                  <span className="block m-auto text-3xl md:text-4xl">🥕</span>
+                  <span className="block m-auto text-3xl md:text-4xl">
+                    <img
+                      src="https://em-content.zobj.net/thumbs/240/apple/354/carrot_1f955.png"
+                      alt="Carotte"
+                      className={"h-8 w-8 inline-block"}
+                    />
+                  </span>
                 </div>
                 <div className="mt-3 text-2xl md:text-4xl font-medium text-green-600">
                   13 %
@@ -296,7 +319,13 @@ export default function Home() {
               </div>
               <div className="relative mt-12 md:mt-12">
                 <div className="w-9">
-                  <span className="block m-auto text-3xl md:text-4xl">💨</span>
+                  <span className="block m-auto text-3xl md:text-4xl">
+                    <img
+                      src="https://em-content.zobj.net/thumbs/240/apple/354/dashing-away_1f4a8.png"
+                      alt="Gaz"
+                      className={"h-8 w-8 inline-block"}
+                    />
+                  </span>
                 </div>
                 <div className="mt-3 text-2xl md:text-4xl font-medium text-green-600">
                   24%
@@ -314,7 +343,13 @@ export default function Home() {
               </div>
               <div className="relative mt-12 md:mt-12">
                 <div className="w-9">
-                  <span className="block m-auto text-3xl md:text-4xl">💧</span>
+                  <span className="block m-auto text-3xl md:text-4xl">
+                    <img
+                      src="https://em-content.zobj.net/thumbs/240/apple/354/droplet_1f4a7.png"
+                      alt="Goutte d'eau"
+                      className={"h-8 w-8 inline-block"}
+                    />
+                  </span>
                 </div>
                 <div className="mt-3 text-2xl md:text-4xl font-medium text-green-600">
                   50 %
@@ -331,7 +366,13 @@ export default function Home() {
               </div>
               <div className="relative mt-12 md:mt-12">
                 <div className="w-9">
-                  <span className="block m-auto text-3xl md:text-4xl">🐝</span>
+                  <span className="block m-auto text-3xl md:text-4xl">
+                    <img
+                      src="https://em-content.zobj.net/thumbs/240/apple/354/honeybee_1f41d.png"
+                      alt="Abeille"
+                      className={"h-8 w-8 inline-block"}
+                    />
+                  </span>
                 </div>
                 <div className="mt-3 text-2xl md:text-4xl font-medium text-green-600">
                   40%
