@@ -58,10 +58,13 @@ const IsfForm = () => {
             className="w-full px-3 py-2 border border-gray-300 rounded focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-green-600"
             type="number"
             id="patrimoine"
-            placeholder="Entrez la valeur de votre patrimoine (dont montants investis dans des placements verts)"
+            placeholder="Entrez la valeur de votre patrimoine"
             required
             onChange={(e) => setPatrimoine(e.target.value)}
           />
+          <div className={"text-sm text-slate-500"}>
+            (dont montants investis dans des placements verts)
+          </div>
           <label
             className="relative block font-bold mb-2 mt-4"
             htmlFor="patrimoine"
