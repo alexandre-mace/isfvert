@@ -28,7 +28,7 @@ function Share() {
   return (
     <Popover>
       <PopoverTrigger asChild>
-        <button className="inline-flex items-center rounded-full py-3 px-6 justify-center font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:opacity-50 disabled:pointer-events-none ring-offset-background border border-input hover:bg-accent hover:text-accent-foreground">
+        <button className="inline-flex mt-4 md:mt-0 items-center rounded-full py-3 px-6 justify-center font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:opacity-50 disabled:pointer-events-none ring-offset-background border border-input hover:bg-accent hover:text-accent-foreground">
           Je partage à mes amis riches{" "}
           <svg
             xmlns="http://www.w3.org/2000/svg"

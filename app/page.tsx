@@ -29,7 +29,7 @@ export default function Home() {
           encourager les investissements dans la transition écologique en
           France.
         </p>
-        <div className="mt-10 flex justify-center gap-x-6">
+        <div className="mt-10 flex flex-col md:flex-row justify-center gap-x-6">
           <a
             className="group inline-flex items-center justify-center rounded-full py-3 px-6 font-medium focus:outline-none focus-visible:outline-2 focus-visible:outline-offset-2 bg-green-200 text-green-900 hover:bg-green-300 hover:text-black active:bg-green-400 focus-visible:outline-slate-900"
             href="#calcul"
