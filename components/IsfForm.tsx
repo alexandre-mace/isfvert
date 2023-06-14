@@ -13,23 +13,35 @@ const IsfForm = () => {
     e.preventDefault();
 
     let amount = parseFloat(patrimoine) - parseFloat(greenInvestments);
-
-    if (amount <= 800000) {
-      setIsfAmount(0);
-    } else if (amount <= 1300000) {
-      setIsfAmount(amount * 0.005);
-    } else if (amount <= 2570000) {
-      setIsfAmount(amount * 0.007);
-    } else if (amount <= 5000000) {
-      setIsfAmount(amount * 0.01);
-    } else if (amount <= 10000000) {
-      setIsfAmount(amount * 0.0125);
-    } else {
-      setIsfAmount(amount * 0.015);
-    }
-
+    setIsfAmount(computeIsfTax(amount));
     setShowResult(true);
   };
+
+  function computeIsfTax(amount: number) {
+    const taxSlices = [
+      { threshold: 800000, rate: 0 },
+      { threshold: 1300000, rate: 0.005 },
+      { threshold: 2570000, rate: 0.007 },
+      { threshold: 5000000, rate: 0.01 },
+      { threshold: 10000000, rate: 0.0125 },
+      { threshold: Infinity, rate: 0.015 },
+    ];
+
+    let tax = 0;
+    let lastSlice = 0;
+
+    for (const slice of taxSlices) {
+      const taxable = Math.min(amount, slice.threshold) - lastSlice;
+      tax += taxable * slice.rate;
+      lastSlice = slice.threshold;
+
+      if (amount <= slice.threshold) {
+        break;
+      }
+    }
+
+    return tax;
+  }
 
   return (
     <>
@@ -101,7 +113,7 @@ const IsfForm = () => {
               {Math.round(
                 parseFloat(patrimoine ? patrimoine : String(0)) -
                   parseFloat(greenInvestments ? greenInvestments : String(0))
-              )}{" "}
+              ).toLocaleString()}{" "}
               €
             </span>
           </div>
