@@ -18,6 +18,10 @@ const IsfForm = () => {
   };
 
   function computeIsfTax(amount: number) {
+    if (amount < 1300000) {
+      return 0;
+    }
+
     const taxSlices = [
       { threshold: 800000, rate: 0 },
       { threshold: 1300000, rate: 0.005 },
