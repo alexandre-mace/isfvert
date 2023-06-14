@@ -193,7 +193,7 @@ export default function Home() {
                 <a
                   className={"text-white"}
                   target={"_blank"}
-                  href="https://www.journaldunet.fr/patrimoine/guide-des-finances-personnelles/1202027-isf-bareme-calcul-et-simulation/"
+                  href="https://www.impots.gouv.fr/particulier/calcul-de-lisf"
                 >
                   l&apos;ISF historique
                 </a>
