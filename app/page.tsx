@@ -2,6 +2,12 @@ import IsfForm from "@/components/IsfForm";
 import Image from "next/image";
 import Share from "@/components/Share";
 import Matomo from "@/components/Matomo";
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion";
 
 export default function Home() {
   return (
@@ -159,7 +165,7 @@ export default function Home() {
 
       <section
         id="calcul"
-        aria-label="Features for running your books"
+        aria-label="Simulation ISF Vert"
         className="relative overflow-hidden bg-green-600 pb-20 pt-16 sm:py-32"
       >
         <div className="mx-auto max-w-2xl px-4 sm:px-6 lg:px-8 relative">
@@ -209,7 +215,7 @@ export default function Home() {
       </section>
       <section
         id="reduire"
-        aria-label="Features for simplifying everyday business tasks"
+        aria-label="Comment réduire l'impact de mon argent"
         className="pb-14 pt-16 sm:pb-20 sm:pt-32 lg:pb-32"
       >
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
@@ -429,6 +435,367 @@ export default function Home() {
                 <Share />
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+      <section id="faq" aria-label="FAQ" className="pb-14 sm:pb-20 lg:pb-32">
+        <div className="mx-auto pt-10 max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="text-2xl tracking-tight sm:text-3xl md:text-4xl text-center">
+            La FAQ
+          </div>
+          <div className={"mx-auto max-w-3xl mt-12"}>
+            <Accordion type="single" collapsible>
+              <AccordionItem value="item-1">
+                <AccordionTrigger>L'ISF Vert c’est quoi ?</AccordionTrigger>
+                <AccordionContent>
+                  <p className={"mb-6"}>
+                    C’est une version revisitée de l’Impôt de Solidarité sur la
+                    Fortune (ISF)*, en version “verte”, c'est-à-dire au service
+                    de la transition écologique et de la préservation de
+                    l’environnement.
+                  </p>
+                  <p className={"mb-6"}>
+                    L'idée derrière l'ISF Vert est{" "}
+                    <b>
+                      d'utiliser l'impôt comme un levier pour mobiliser des
+                      capitaux privés en faveur de la transition écologique
+                    </b>
+                    . En mobilisant des ressources financières privées, il peut
+                    contribuer à accélérer le financement de la transition
+                    écologique en complément des investissements publics. Les
+                    contribuables assujettis à l'IFI* pourraient bénéficier de
+                    réductions d'impôt en investissant dans des entreprises ou
+                    des fonds d'investissement qui répondent à des critères
+                    environnementaux précis. Ces critères peuvent inclure des
+                    domaines tels que les énergies renouvelables, l'efficacité
+                    énergétique, la rénovation thermique des bâtiments,
+                    l’agroécologie, la gestion durable des ressources, la
+                    préservation de la biodiversité, les transports à faible
+                    émission etc.
+                  </p>{" "}
+                  <p className={"mb-6"}>
+                    Pour le moment, l’ISF Vert{" "}
+                    <b>n’existe qu’à l’état de proposition</b>. Cette piste de
+                    financement de la transition écologique a été promue par
+                    Greenpeace, reprise par divers courants politiques, et ce
+                    principe est également présent dans le rapport France
+                    Stratégie 2023 “LES INCIDENCES ÉCONOMIQUES DE L’ACTION POUR
+                    LE CLIMAT” (dirigé par Jean Pisany-Ferry et Selma Mahfouz).
+                  </p>
+                  <p className={""}>
+                    <i>
+                      *l'Impôt de Solidarité sur la Fortune (ISF) a été remplacé
+                      en France par l'Impôt sur la Fortune Immobilière (IFI) en
+                      2018
+                    </i>
+                  </p>
+                </AccordionContent>
+              </AccordionItem>
+              <AccordionItem value="item-2">
+                <AccordionTrigger className={"text-left"}>
+                  En quoi l'ISF Vert pourrait avoir un impact rapide et
+                  substantiel pour financer la transition écologique en France ?
+                </AccordionTrigger>
+                <AccordionContent>
+                  <p className={"mb-6"}>
+                    L’ISF Vert pourrait être un excellent levier pour accélérer
+                    la transition écologique en France en complément des efforts
+                    publics et des politiques gouvernementales existantes. En
+                    effet, la mobilisation de capitaux grâce aux incitations
+                    fiscales de l'ISF Vert permettrait aux contribuables
+                    assujettis à l'Impôt sur la Fortune Immobilière (IFI)
+                    d’allouer une partie des revenus de leur patrimoine à des
+                    projets axés sur la transition écologique.
+                  </p>
+                  <p className={"mb-6"}>
+                    Pour que l’ISF Vert soit efficace, il faudra des critères
+                    d’éligibilité rigoureux et une évaluation régulière des
+                    projets bénéficiaires pour s'assurer que les investissements
+                    réalisés grâce à cet ISF climatique aient un véritable
+                    impact positif sur la transition écologique.
+                  </p>
+                </AccordionContent>
+              </AccordionItem>
+              <AccordionItem value="item-3">
+                <AccordionTrigger>
+                  D’où vient l’idée d’un ISF Vert ?
+                </AccordionTrigger>
+                <AccordionContent>
+                  <p className={"mb-6"}>
+                    Les propositions concrètes pour un ISF Vert proviennent de
+                    divers acteurs, notamment des experts en fiscalité, des
+                    économistes, des ONG environnementales, des chercheurs et
+                    des décideurs politiques. L'idée d'un ISF Vert découle de la
+                    volonté de mobiliser des ressources financières privées pour
+                    soutenir la transition écologique. Elle est souvent
+                    considérée comme une évolution de l'Impôt de Solidarité sur
+                    la Fortune (ISF), qui a été remplacé en France par l'Impôt
+                    sur la Fortune Immobilière (IFI) en 2018.
+                  </p>
+                  <p className={"mb-6"}>
+                    L'ISF Vert s'inscrit dans le contexte plus large de la prise
+                    de conscience croissante des enjeux environnementaux et de
+                    la nécessité d'agir rapidement pour lutter contre le
+                    changement climatique, la perte de biodiversité et préserver
+                    la planète. Les gouvernements et les organisations
+                    internationales ont reconnu l'importance d'investissements
+                    massifs dans des projets durables et d'encouragement des
+                    entreprises à adopter des pratiques respectueuses de
+                    l'environnement.
+                  </p>
+                  <p className={""}>
+                    Dans ce cadre, l'idée d'un ISF Vert émerge comme un moyen de
+                    canaliser les capitaux privés vers des investissements
+                    écologiques. Elle s'inspire également des concepts de
+                    finance verte et d'investissement responsable, qui visent à
+                    intégrer des critères environnementaux, sociaux et de
+                    gouvernance (ESG) dans les décisions d'investissement.
+                  </p>
+                </AccordionContent>
+              </AccordionItem>
+              <AccordionItem value="item-4">
+                <AccordionTrigger>
+                  L’ISF vert a-t-il déjà été mis en place dans certains pays ?{" "}
+                </AccordionTrigger>
+                <AccordionContent>
+                  <p className={""}>
+                    Plusieurs pays ont déjà échangé sur des initiatives
+                    similaires sous des noms différents. Par exemple, aux
+                    Pays-Bas, il existe le "Green Funds Scheme", qui offre des
+                    avantages fiscaux aux investisseurs dans des fonds durables.
+                    En Belgique, il y a eu des discussions sur la création d'un
+                    "ISF Climat" axé sur le financement de projets climatiques.
+                    Il est important de souligner que chaque pays peut avoir ses
+                    propres initiatives et approches en matière de fiscalité
+                    verte. Les détails spécifiques de l'ISF Vert peuvent varier
+                    d'un pays à l'autre en fonction des contextes législatifs,
+                    économiques et politiques spécifiques.
+                  </p>
+                </AccordionContent>
+              </AccordionItem>
+              <AccordionItem value="item-5">
+                <AccordionTrigger>
+                  Quelle est la différence entre ISF Vert et ISF Climatique ?
+                </AccordionTrigger>
+                <AccordionContent>
+                  <p className={"mb-6"}>
+                    L'ISF Vert et l'ISF Climatique sont deux concepts similaires
+                    qui visent à encourager les investissements dans des projets
+                    et des entreprises liés à la transition écologique.
+                    Cependant, ils peuvent varier en termes de portée et de
+                    focus.
+                  </p>
+                  <p className={"mb-6"}>
+                    <b>L'ISF Vert</b> se concentre sur les investissements dans
+                    des entreprises et des projets ayant un{" "}
+                    <b>impact environnemental positif général</b>. Les critères
+                    d'éligibilité de l'ISF Vert peuvent couvrir un large
+                    éventail de domaines environnementaux, tels que les énergies
+                    renouvelables, l'efficacité énergétique, la préservation de
+                    la biodiversité, l’agriculture biologique, la lutte contre
+                    la pollution plastique et autres micro-polluants etc.
+                  </p>
+                  <p className={"mb-6"}>
+                    D'un autre côté, l'<b>ISF Climatique</b> se concentre
+                    spécifiquement sur les investissements visant à{" "}
+                    <b>réduire les émissions de gaz à effet de serre</b> et à
+                    lutter contre le changement climatique. Il met l'accent sur
+                    les projets et les entreprises qui contribuent directement à
+                    la réduction des émissions de CO2 et à l'atténuation des
+                    impacts climatiques. Les investissements éligibles à l'ISF
+                    Climatique peuvent inclure des initiatives dans les énergies
+                    renouvelables, l'efficacité énergétique, la gestion des
+                    déchets, le transport durable, etc.
+                  </p>
+                  <p className={""}>
+                    En résumé, les deux concepts partagent une vision commune
+                    d'utiliser le système fiscal pour encourager les
+                    investissements dans des projets écologiques, mais l'ISF
+                    Climatique met l'accent sur l'aspect “réchauffement
+                    climatique” spécifiquement quand l’ISF Vert englobe un
+                    spectre plus large de la transition écologique.
+                  </p>
+                </AccordionContent>
+              </AccordionItem>
+              <AccordionItem value="item-6">
+                <AccordionTrigger>
+                  Quels sont les freins à mettre en place un ISF Vert en France
+                  ?
+                </AccordionTrigger>
+                <AccordionContent>
+                  <p className={"mb-6"}>
+                    La mise en place d'un ISF Vert en France semble très
+                    intéressante sur le papier mais peut être ralentie par
+                    plusieurs freins potentiels. En effet, elle nécessite une
+                    réflexion approfondie pour diriger efficacement les
+                    investissements financiers vers les enjeux de la transition
+                    écologique.
+                  </p>
+                  <p className={"mb-6"}>
+                    Parmi les freins à la mise en place d’une ISF Vert, il y a
+                    la contestation des contribuables. Cet ISF Climatique
+                    pourrait concerner les plus riches fortunes françaises, soit
+                    moins quelques pourcents de la population française selon
+                    les planchers et plafonds choisis. La mise en place d'un
+                    nouvel impôt, même s'il est axé sur des objectifs
+                    environnementaux, peut rencontrer de la résistance auprès
+                    des contribuables concernés par ce nouvel Impôt Sur la
+                    Fortune Vert : il est souvent argué que ces contribuables
+                    “surtaxés” quitteraient le pays du fait d’impôts trop
+                    importants. <br /> Comme toute nouvelle réforme d’ampleur,
+                    la mise en œuvre d'un ISF Vert nécessite la création d’un
+                    processus administratif spécifique qui peut être complexe à
+                    mettre en place. Il faut définir des critères d'éligibilité
+                    clairs et vérifiables pour les investissements écologiques
+                    ainsi qu’un suivi sur le long terme. L’objectif est d’éviter
+                    un effet greenwashing des investissements liés à cet ISF
+                    vert. Il est important de s'assurer que les projets soutenus
+                    contribuent effectivement à la réduction des émissions de
+                    gaz à effet de serre et/ou à la protection de
+                    l'environnement.
+                  </p>
+                  <p className={""}>
+                    Les avantages fiscaux donnés aux contribuables pourraient
+                    représenter une perte de revenu pour l’État sauf (i) si
+                    l’assiette de l’IFI actuelle est revisitée et en particulier
+                    si cette assiette reprend tous les actifs qui ont été sortis
+                    de l’ISF pour créer l’IFI ou (ii) si les taux et seuils sont
+                    revisités eux aussi. <br /> Une fiscalité plus lourde
+                    pourrait par ailleurs affecter l’attractivité de la France,
+                    en particulier si les critères d'éligibilité sont trop
+                    restrictifs ou si les incitations fiscales ne sont pas
+                    alignées sur les réalités économiques. Il faudrait donc
+                    veiller à maintenir un équilibre entre les incitations à
+                    investir dans des projets verts et le maintien d’un impôt
+                    acceptable financièrement.
+                  </p>
+                </AccordionContent>
+              </AccordionItem>
+              <AccordionItem value="item-7">
+                <AccordionTrigger>
+                  Quel est le lien entre ISF Vert et ESG ?
+                </AccordionTrigger>
+                <AccordionContent>
+                  <p className={"mb-6"}>
+                    L'ISF Vert et les critères ESG (Environnementaux, Sociaux et
+                    de Gouvernance) sont liés par leur objectif commun de
+                    promouvoir des investissements durables et responsables.
+                  </p>
+                  <ul className={"mb-6 list-disc pl-5"}>
+                    <li>
+                      L'ISF Vert se réfère spécifiquement à un dispositif fiscal
+                      visant à mobiliser des capitaux privés pour financer la
+                      transition écologique en encourageant les investissements
+                      dans des projets et des entreprises ayant un impact
+                      environnemental positif.
+                    </li>
+                    <li>
+                      Les critères ESG sont utilisés pour évaluer les
+                      performances environnementales, sociales et de gouvernance
+                      des entreprises et des investissements. Ils permettent aux
+                      investisseurs d'intégrer des considérations non
+                      financières dans leurs décisions d'investissement et de
+                      favoriser des pratiques durables.
+                    </li>
+                  </ul>
+                  <p className={"mb-6"}>
+                    L'ISF Vert pourrait être conçu pour encourager les
+                    investissements conformes à des critères ESG spécifiques.
+                    Les projets et les entreprises éligibles à l'ISF Vert
+                    pourraient être évalués selon des critères ESG pour
+                    s'assurer qu'ils respectent les normes environnementales,
+                    sociales et de gouvernance.
+                  </p>
+                  <p className={""}>
+                    Par exemple, un projet d'énergie renouvelable pourrait être
+                    évalué sur des critères tels que son impact sur les
+                    émissions de gaz à effet de serre, sa gestion des déchets,
+                    son utilisation responsable des ressources naturelles, ainsi
+                    que son impact social, comme la création d'emplois locaux ou
+                    la participation des parties prenantes.
+                  </p>
+                </AccordionContent>
+              </AccordionItem>
+              <AccordionItem value="item-8">
+                <AccordionTrigger>Pourquoi payer l’ISF Vert ?</AccordionTrigger>
+                <AccordionContent>
+                  <p className={"mb-6"}>
+                    <b>1 - Financement de la transition écologique</b>
+                    <br /> L'ISF Vert peut constituer une source de financement
+                    significative pour soutenir la transition écologique en
+                    France. En imposant les patrimoines les plus importants, il
+                    est possible de mobiliser des ressources financières
+                    nécessaires pour investir dans les énergies renouvelables,
+                    l'efficacité énergétique, les transports durables et
+                    d'autres initiatives vertes. Cela peut accélérer la
+                    transition vers une économie plus durable et aider à lutter
+                    contre le changement climatique.
+                  </p>
+                  <p className={"mb-6"}>
+                    <b>2 - Activité économique plus juste et équitable</b>
+                    <br /> L'ISF Vert peut jouer un rôle dans la promotion de la
+                    justice sociale. En redistribuant une partie des revenus de
+                    cet impôt vers des programmes sociaux et des initiatives
+                    d'inclusion, il contribue à réduire les inégalités et à
+                    soutenir les communautés les plus vulnérables. Cela permet
+                    de garantir que la transition écologique ne se fait pas aux
+                    dépens des plus défavorisés, mais qu'elle bénéficie à tous,
+                    en créant des emplois verts, en améliorant l'accès aux
+                    énergies renouvelables et en favorisant une transition
+                    juste. En orientant les fonds vers des initiatives
+                    écologiques, il permet de créer des opportunités économiques
+                    et des emplois dans le secteur de la transition écologique,
+                    tout en bénéficiant à l'ensemble de la société. De plus, les
+                    entreprises françaises qui s'engagent dans des pratiques
+                    durables peuvent bénéficier d'un avantage concurrentiel, car
+                    elles répondent aux attentes croissantes des consommateurs
+                    en matière de responsabilité environnementale.
+                  </p>
+                  <p className={""}>
+                    <b>3 - Responsabilité envers les générations futures</b>
+                    <br /> Payer l'ISF Vert reflète votre engagement envers les
+                    générations futures. En prenant en compte l'impact
+                    environnemental de votre patrimoine, vous reconnaissez la
+                    nécessité de préserver les ressources naturelles pour les
+                    futures générations. En contribuant financièrement à la
+                    transition écologique, vous agissez de manière responsable
+                    envers l'avenir de vos propres enfants et des générations à
+                    venir, en les dotant d'un environnement sain et durable.
+                  </p>
+                </AccordionContent>
+              </AccordionItem>
+              <AccordionItem value="item-9">
+                <AccordionTrigger>
+                  En quoi l’ISF vert peut soutenir la transition écologique
+                  d’agriculture française ?
+                </AccordionTrigger>
+                <AccordionContent>
+                  <p className={"mb-6"}>
+                    L’agriculture a structurellement un fort impact
+                    environnemental, puisque le secteur agricole est responsable
+                    de 23 % des émissions anthropiques de gaz à effet de serre
+                    (GES), a un impact sur la perte de biodiversité, sur l’usage
+                    de l’eau, et génère des pollutions (air, eau, sols) liées
+                    aux intrants de synthèse utilisés.
+                  </p>
+                  <p className={"mb-6"}>
+                    L’agroécologie permet de réduire ces impacts en limitant les
+                    besoins en ressources non renouvelables, en limitant
+                    l’impact sur les sols et l’eau en particulier et en essayant
+                    de favoriser des écosystèmes riches en biodiversité.
+                  </p>
+                  <p className={""}>
+                    On peut donc imaginer que l’investissement dans des projets
+                    en agroécologie fasse partie des placements déductibles de
+                    l’ISF vert. A ce titre, des foncières comme celles de Fermes
+                    En Vie ou de Terre de Liens qui permettent à des jeunes de
+                    s’installer pour développer des projets ambitieux en
+                    agroécologie pourraient faire partie des investissements
+                    déductibles.
+                  </p>
+                </AccordionContent>
+              </AccordionItem>
+            </Accordion>
           </div>
         </div>
       </section>
