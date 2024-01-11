@@ -426,7 +426,7 @@ export default function Home() {
               <div>
                 <a
                   className="group inline-flex items-center justify-center rounded-full py-4 px-8 text-lg font-medium focus:outline-none focus-visible:outline-2 focus-visible:outline-offset-2 bg-green-200 text-green-900 hover:bg-green-300 hover:text-black active:bg-green-400 focus-visible:outline-slate-900"
-                  href="https://feve.co/investir?utm_source=isfvert&utm_medium=cta"
+                  href="https://feve.co/investir?utm_source=isfvert&utm_medium=referral&utm_content=cta_homepage&utm_campaign=isf_vert"
                 >
                   J&apos;investis dans l&apos;agroécologie 👨‍🌾
                 </a>
@@ -820,7 +820,7 @@ export default function Home() {
           Cette page web a été créée par{" "}
           <a
             className={"underline"}
-            href="https://feve.co?utm_source=isfvert&utm_medium=cta"
+            href="https://feve.co/investir?utm_source=isfvert&utm_medium=referral&utm_content=cta_homepage&utm_campaign=isf_vert"
             target="_blank"
           >
             FEVE
