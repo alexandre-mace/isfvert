@@ -33,7 +33,7 @@ export default function RootLayout({
         />
         <meta
           property="og:image"
-          content="https://www.isfvert.fr/_next/image?url=%2Fisf.webp&w=1080&q=75"
+          content="https://www.isfvert.fr/isf.webp"
         />
         {children}
       </body>
